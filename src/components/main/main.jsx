@@ -91,20 +91,23 @@ const Main = () => {
                 }
 
             </div>
-            <div className="d-flex align-items-center position-relative mt-4">
-                <ReactPaginate
-                    breakLabel="..."
-                    nextLabel=">"
-                    onPageChange={handlePageClick}
-                    marginPagesDisplayed={1}
-                    pageRangeDisplayed={3}
-                    pageCount={Math.ceil(products.length / 10)}
-                    previousLabel="<"
-                    renderOnZeroPageCount={null}
-                    className="paginationUL"
-                    activeClassName="active"
-                />
-            </div>
+            {
+                data.length<=10&&
+                <div className="d-flex align-items-center position-relative mt-4">
+                    <ReactPaginate
+                        breakLabel="..."
+                        nextLabel=">"
+                        onPageChange={handlePageClick}
+                        marginPagesDisplayed={1}
+                        pageRangeDisplayed={3}
+                        pageCount={Math.ceil(products.length / 10)}
+                        previousLabel="<"
+                        renderOnZeroPageCount={null}
+                        className="paginationUL"
+                        activeClassName="active"
+                    />
+                </div>
+            }
         </div>
     );
 };
