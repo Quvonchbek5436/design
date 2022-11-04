@@ -1,0 +1,98 @@
+.productContainer {
+    background: #F3F5F8;
+    border-radius: 6px;
+    padding: 20px 28px;
+    min-height: calc(100vh - 110px);
+}
+
+.show {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.imgBox {
+    height: 271px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #F3F5F8;
+    border-radius: 16px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.col-lg-6 .iconsCard {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.col-lg-6 .cardIcon {
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+.col-lg-6 .cardIcon:hover{
+    transform: scale(1.1);
+}
+
+.cardIconList{
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+hr{
+    border-top: 1px solid #BBC2D0 !important;
+}
+
+.addBasket{
+    border-radius: 26px;
+    background: #00C48C;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 40px;
+    padding: 16px 0;
+}

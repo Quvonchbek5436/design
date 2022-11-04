@@ -1,0 +1,239 @@
+.mainContainer {
+    background: #F3F5F8;
+    border-radius: 6px;
+    padding: 20px 28px;
+    min-height: calc(100vh - 110px);
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+}
+
+.searchForm > input {
+    width: calc(100% - 100px);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 13px 20px;
+}
+
+.searchForm > input::placeholder {
+    color: #BBC2D0;
+}
+
+.searchForm > button {
+    width: 100px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    color: white;
+    padding: 12.5px 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cardProduct span {
+    border-radius: 2px;
+}
+
+.cardProduct .iconsCard {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardProduct .cardIcon {
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+.cardProduct .cardIcon:hover{
+    transform: scale(1.1);
+}
+
+.cardProduct .cardImg{
+    background-color: #F7F7F7;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.paginationUL,
+.paginationUL2 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%
+}
+
+.paginationUL li:first-child,.paginationUL li:last-child{
+    /*display: none;*/
+}
+.paginationUL li:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    color: lightgray;
+}
+.paginationUL li:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    color: lightgray;
+}
+
+.paginationUL li a,
+.paginationUL2 li a {
+    /*background-color: #eee;*/
+    margin: 2px;
+    color: #000;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.paginationUL li a:hover,
+.paginationUL2 li a:hover {
+    color: #000 !important;
+}
+
+.paginationUL li.active a,
+.paginationUL2 li.active a {
+    background-color: #00C48C;
+    border-color: transparent;
+    color: white;
+}
+
+.paginationUL li.active a:hover,
+.paginationUL2 li.active a:hover {
+    color: #fff !important;
+}
+
+@media screen and (min-width: 1440px ) {
+    .cardProduct .cardImg {
+        width: 100%;
+        height: 168px;
+
+    }
+
+    .cardsBox{
+        gap:2.5%;
+    }
+
+    .cardProduct .cardImg img {
+        height: 100%;
+    }
+
+    .cardProduct {
+        width: 18%;
+        padding: 12px;
+        background-color: white;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 1265px )and (max-width: 1439px) {
+    .cardProduct .cardImg {
+        width: 100%;
+        height: 168px;
+
+    }
+
+    .cardsBox{
+        gap:2.5%;
+    }
+
+    .cardProduct .cardImg img {
+        height: 100%;
+    }
+
+    .cardProduct {
+        width: 23%;
+        padding: 12px;
+        background-color: white;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 1051px )and (max-width: 1264px) {
+    .cardProduct .cardImg {
+        width: 100%;
+        height: 168px;
+    }
+
+    .cardsBox{
+        gap:5%;
+    }
+    .cardProduct .cardImg img {
+        height: 100%;
+    }
+
+    .cardProduct {
+        width: 30%;
+        padding: 12px;
+        background-color: white;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 767px )and (max-width: 1050px) {
+
+    .cardProduct .cardImg {
+        width: 100%;
+        height: 168px;
+    }
+
+    .cardsBox{
+        gap:6%;
+    }
+
+    .cardProduct .cardImg img {
+        height: 100%;
+    }
+
+    .cardProduct {
+        width: 47%;
+        padding: 12px;
+        background-color: white;
+        border-radius: 15px;
+    }
+}
+
+
+@media screen and (min-width: 540px )and (max-width: 766px) {
+    .cardProduct .cardImg {
+        width: 100%;
+        height: 168px;
+    }
+
+    .cardProduct .cardImg img {
+        height: 100%;
+    }
+
+    .cardProduct {
+        width: 100%;
+        padding: 12px;
+        background-color: white;
+        border-radius: 15px;
+    }
+}
+
+@media screen and  (max-width: 539px) {
+
+}
